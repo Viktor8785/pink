@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Приложение Пинк</title>
+</head>
+<body class="page__body">
+  <header class="header">
+    <a class="header__logo header__logo--device">
+      <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a>Фотографии</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a>Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a>HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Конкурс</h1>
+    <section class="form-intro">
+      <div class="form-intro__wrapper">
+        <h2 class="form-intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      </div>
+    </section>
+    <section class="main-form">
+      <h2 class="visually-hidden">Форма участия в конкурсе</h2>
+      <form class="main-form__form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
+        <div class="form__wrapper">
+          <p class="form__invitation">
+            Поделитесь своей историей и получите шанс выиграть ценный приз
+            — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+          </p>
+          <fieldset class="name-data">
+            <label for="form__input-surname" class="form__label">Фамилия</label>
+            <input class="form__input-text form__input-surname" id="form__input-surname" type="text" name="form__input-surname"
+            placeholder="Укажите фамилию *" required pattern="[А-Яа-я\-]+">
+            <label for="form__input-name" class="form__label">Имя</label>
+            <input class="form__input-text form__input-name" id="form__input-name" type="text" name="form__input-name"
+            placeholder="Введите ваше имя *" required pattern="[А-Яа-я\-]+">
+            <label for="form__input-middlename" class="form__label">Отчество</label>
+            <input class="form__input-text form__input-middlename" id="form__input-middlename" type="text" name="form__input-middlename"
+            placeholder="Ну и отчество тоже" pattern="[А-Яа-я\-]+">
+          </fieldset>
+          <fieldset class="aplication-data">
+            <legend class="form__label">С каким приложением путешествовали?</legend>
+            <input class="visually-hidden" id="form__input-ios" type="checkbox" name="form__input-check"
+            checked>
+            <label for="form__input-ios" class="form__label form__label-check" tabindex="0">Pink для iOS</label>
+            <input class="visually-hidden" id="form__input-android" type="checkbox" name="form__input-check">
+            <label for="form__input-android" class="form__label form__label-check" tabindex="0">Pink на Android</label>
+            <input class="visually-hidden" id="form__input-widows" type="checkbox" name="form__input-check">
+            <label for="form__input-widows" class="form__label form__label-check" tabindex="0">Windows Phone</label>
+          </fieldset>
+          <fieldset class="contacts-data">
+            <legend class="form__label form__label--device">контактная информация</legend>
+            <label for="form__input-phone" class="form__label">Номер телефона</label>
+            <input class="form__input-text form__input-phone" id="form__input-phone" type="text" name="form__input-phone"
+            placeholder="Номер, пожалуйста" pattern="\+[0-9]+">
+            <label for="form__input-email" class="form__label">Адрес почты</label>
+            <input class="form__input-text form__input-email" id="form__input-email" type="text" name="form__input-email"
+            placeholder="Введите почту *" required pattern="[a-zA-Z0-9\.\-_]+@[a-z]+\.[a-z]{2,3}">
+          </fieldset>
+          <fieldset class="achivments-data">
+            <legend class="form__label">Ваши безбашенные достижения в путешествии</legend>
+            <input class="visually-hidden" id="form__input-shark" type="checkbox" name="form__input-shark"
+            checked>
+            <label for="form__input-shark" class="form__label form__label-check" tabindex="0">Сделал селфи с акулой</label>
+            <input class="visually-hidden" id="form__input-beach" type="checkbox" name="form__input-beach"
+            checked>
+            <label for="form__input-beach" class="form__label form__label-check" tabindex="0">Обгорел на пляже</label>
+            <input class="visually-hidden" id="form__input-norris" type="checkbox" name="form__input-norris">
+            <label for="form__input-norris" class="form__label form__label-check" tabindex="0">Видел Чака Норриса</label>
+            <input class="visually-hidden" id="form__input-souvenirs" type="checkbox" name="form__input-souvenirs">
+            <label for="form__input-souvenirs" class="form__label form__label-check" tabindex="0">Накупил сувениров</label>
+            <input class="visually-hidden" id="form__input-tower" type="checkbox" name="form__input-tower"
+            checked>
+            <label for="form__input-tower" class="form__label form__label-check" tabindex="0">Удержал башню</label>
+            <input class="visually-hidden" id="form__input-hotel" type="checkbox" name="form__input-hotel">
+            <label for="form__input-hotel" class="form__label form__label-check" tabindex="0">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="emotions-data">
+            <legend class="form__label form__label--device">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+            <label for="form__input-emotions" class="visually-hidden">Описание впечатлений</label>
+            <textarea class="form__input-textarea" id="form__input-emotions" name="form__input-emotions"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="form__button" type="submit">Отправить форму</button>
+          <p class="form__footnote">
+            <span class="form__footnote-star">*</span> — обязательные поля
+          </p>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+      </div>
+      <div class="social">
+        <div class="social__wrapper">
+          <img class="social__img social__twitter" src="img/twitter.svg" width="18" height="14" alt="Твиттер лого">
+          <img class="social__img social__fb" src="img/fb.svg" width="9" height="18" alt="Фейсбук лого">
+          <img class="social__img social__youtube" src="img/youtube.svg" width="15" height="13" alt="Ютуб лого">
+        </div>
+      </div>
+      <div class="page-footer__dev">
+        <h3 class="page-footer__dev-name">Разработано</h3>
+        <img class="page-footer__dev-logo" src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy лого">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
